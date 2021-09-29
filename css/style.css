@@ -17,6 +17,30 @@ img {
   max-width: 100%;
 }
 
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+input:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+input::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+input::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,7 +441,18 @@ template {
 }
 
 .logo {
-  width: 177px;
+  text-decoration: none;
+}
+
+.logo__name {
+  font-family: Luckiest Guy;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.logo__name--red {
+  color: #EC1F46;
 }
 
 .search {
@@ -444,6 +479,7 @@ template {
 
 .search__button {
   position: absolute;
+  padding: 12px 24px 12px 25px;
   top: 0;
   right: 0;
   width: 65px;
@@ -473,6 +509,8 @@ template {
 
 .user__name {
   margin-left: 18px;
+  margin-top: 13px;
+  margin-bottom: auto;
   font-size: 14px;
   line-height: 18px;
   color: #333333;
@@ -488,18 +526,22 @@ template {
   .container {
     max-width: 700px;
   }
-  .logo {
-    width: 133px;
+  .navbar-menu {
+    max-width: 673px;
+  }
+  .logo__name {
+    font-size: 18px;
+    line-height: 18px;
   }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu__list {
-    padding-top: 22px;
+    padding-top: 21px;
     padding-bottom: 23px;
   }
   .navbar-menu__link {
@@ -548,8 +590,9 @@ template {
 }
 
 @media (max-width: 576px) {
-  .logo {
-    width: 99px;
+  .logo__name {
+    font-size: 13px;
+    line-height: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
