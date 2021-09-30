@@ -556,10 +556,13 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 87%;
   }
   .navbar__search, .navbar-menu__list, .navbar__user {
     display: none;
+  }
+  .navbar-top__menu-button {
+    margin-top: 6px;
   }
   .menu-button {
     width: 16px;
@@ -590,6 +593,10 @@ template {
 }
 
 @media (max-width: 576px) {
+  .navbar-top {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   .logo__name {
     font-size: 13px;
     line-height: 13px;

@@ -30,10 +30,13 @@
 @media ( max-width: 768px )
   .container
     max-width: 576px
-    width: 92%
+    width: 87%
   .navbar
     &__search, &-menu__list, &__user
       display: none
+    &-top
+      &__menu-button
+        margin-top: 6px
   .menu
     &-button
       width: 16px
@@ -53,6 +56,10 @@
 @media ( max-width: 576px )
   // .logo
   //   width: 99px
+  .navbar
+    &-top
+      padding-top: 26px
+      padding-bottom: 26px
   .logo__name
     font-size: 13px
     line-height: 13px
