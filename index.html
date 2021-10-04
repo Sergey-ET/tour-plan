@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -23,11 +24,6 @@
               <span class="logo__name logo__name--red">tour</span>
               plan
             </span>
-            <!-- <img
-              src="img/horizontal-logo.svg"
-              alt="Logo: Best Tour Plan Company"
-              class="logo__image"
-            /> -->
           </a>
           <form action="#" class="search navbar__search">
             <input
@@ -104,7 +100,7 @@
     <!-- /.breadcrumb -->
     <section class="hotel">
       <div class="container">
-        <div class="hotel-info">
+        <div class="hotel-info hotel__hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
@@ -154,9 +150,46 @@
           <!-- /.hotel-info__right -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="./img/slide-1.jpg"
+                    alt="Bungalows next to the pool"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-4.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/slide-5.jpg" alt="" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="swiper-button swiper-button--prev"></button>
+              <button class="swiper-button swiper-button--next"></button>
+            </div>
+            <!-- /.swiper -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
