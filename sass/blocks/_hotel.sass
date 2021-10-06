@@ -28,9 +28,11 @@
     line-height: 15px
   &-grid
     display: flex
-    align-items: flex-start
     justify-content: space-between
-    gap: 30px 27px
+  &-details
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   flex-basis: 100%
   display: flex
@@ -181,3 +183,8 @@
     background-color: $primary-color
     color: $light-color
     cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  border: none
+  border-radius: 10px

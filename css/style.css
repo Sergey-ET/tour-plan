@@ -605,13 +605,22 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 30px 27px;
+}
+
+.hotel-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .stars {
@@ -861,6 +870,14 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000000;
 }
 
 @media (max-width: 1200px) {
