@@ -26,6 +26,11 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    gap: 30px 27px
 .stars
   flex-basis: 100%
   display: flex
@@ -103,3 +108,76 @@
     height: 100%
     z-index: 10
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+.booking
+  width: 350px
+  min-height: 210px
+  padding: 29px 29px 26px 26px
+  background-color: $dark-color
+  color: $light-color
+  border-radius: 8px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-family: "Nunito", sans-serif
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-family: "Nunito", sans-serif
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-family: "Nunito", sans-serif
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: "Nunito", sans-serif
+    font-size: 12px
+    line-height: 16px
+    &:first-child
+      margin-bottom: 8px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-family: "Nunito", sans-serif
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: "Nunito", sans-serif
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: inherit
+    text-decoration: none
+  &__digits
+    margin-left: 8px
+  &__button
+    padding: 13px 83px
+    font-family: "Nunito", sans-serif
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    border: none
+    background-color: $primary-color
+    color: $light-color
+    cursor: pointer
