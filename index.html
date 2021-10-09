@@ -171,65 +171,66 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/slide-1.webp"
-                    alt="Bungalows next to the pool"
-                    width="728"
-                    height="450"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/slide-2.webp"
-                    alt="Internal pool"
-                    width="728"
-                    height="450"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/slide-3.webp"
-                    alt="Pool bar"
-                    width="728"
-                    height="450"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/slide-4.webp"
-                    alt="Pool bar"
-                    width="728"
-                    height="450"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="./img/slide-5.webp"
-                    alt="Beautiful room with two beds"
-                    width="728"
-                    height="450"
-                  />
-                </div>
+          <!-- Slider main container -->
+          <div class="swiper hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="./img/slide-1.webp"
+                  alt="Bungalows next to the pool"
+                  width="728"
+                  height="450"
+                />
               </div>
-              <!-- If we need navigation buttons -->
-              <button class="swiper-button swiper-button--prev"></button>
-              <button class="swiper-button swiper-button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="./img/slide-2.webp"
+                  alt="Internal pool"
+                  width="728"
+                  height="450"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="./img/slide-3.webp"
+                  alt="Pool bar"
+                  width="728"
+                  height="450"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="./img/slide-4.webp"
+                  alt="Pool bar"
+                  width="728"
+                  height="450"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="./img/slide-5.webp"
+                  alt="Beautiful room with two beds"
+                  width="728"
+                  height="450"
+                />
+              </div>
             </div>
-            <!-- /.swiper -->
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- /.slider -->
+          <!-- /.swiper -->
           <div class="hotel-details">
             <div class="booking">
               <div class="booking__info">
@@ -315,6 +316,342 @@
       <!-- /.newsletter-wrapper -->
     </section>
     <!-- /.newsletter -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">What people think about us</h2>
+        <div class="swiper reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-1.webp"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                    width="90"
+                    height="90"
+                  />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="stars reviews-slider__rating">
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-2.webp"
+                    alt="Photo: Brandon Couper"
+                    class="reviews-slider__avatar"
+                    width="90"
+                    height="90"
+                  />
+                  <h3 class="reviews-slider__username">Brandon Couper</h3>
+                  <span class="reviews-slider__date">Stayed 11 May, 2017</span>
+                  <div class="stars reviews-slider__rating">
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Highly recommended for family friendly hotel in Karon Beach!
+                  During festive holidays I visited Hilton Karon 3 times and
+                  joined all of their events because I love the place and their
+                  foods were so good. Staff are super nice, friendly and helpful
+                  everyone love what they’re doing and they really make you feel
+                  like home I can’t remember everyone’s name but I would like to
+                  thank them all. Breakfast and Brunch and Buffet dinner were
+                  very good lots of selections. The lobby bar was good you can
+                  enjoyed drinks and snacks with cool breeze, Khun Yupa is very
+                  friendly and helpful Rooms are nice you can see a little bit
+                  dated but overall it’s in a very good shape. The area is huge
+                  and they do really good job on garden maintenance. And they
+                  have peacocks!!! Peter the peacock and his girlfriends will
+                  walk around and say hello to you it’s really amazing I really
+                  love this place, will definitely go back there again.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-3.webp"
+                    alt="Photo: John Smith"
+                    class="reviews-slider__avatar"
+                    width="90"
+                    height="90"
+                  />
+                  <h3 class="reviews-slider__username">John Smith</h3>
+                  <span class="reviews-slider__date">Stayed 07 June, 2019</span>
+                  <div class="stars reviews-slider__rating">
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  This is an amazing hotel! The rooms are spacious and clean,
+                  beautiful views and the food at any of the on-site restaurants
+                  is simply superb. My 6-night stay last year (glad I stayed
+                  before the Covid-19 pandemic!) was probably the best I\'ve had
+                  in my lifetime. The staff was the best part of the hotel
+                  experience - super friendly and helpful in all respects.
+                  Naturally, my next trip to Thailand will include a stay at
+                  this hotel and my highest compliments to the hotel and staff
+                  for all they accomplished in making my vacation so memorable!
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-4.webp"
+                    alt="Photo: Elizabeth Winner"
+                    class="reviews-slider__avatar"
+                    width="90"
+                    height="90"
+                  />
+                  <h3 class="reviews-slider__username">Elizabeth Winner</h3>
+                  <span class="reviews-slider__date">Stayed 27 Dec, 2018</span>
+                  <div class="stars reviews-slider__rating">
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  The property was extensive and had decent pool facilities.The
+                  rooms need upgrading or renovation to bring them into the
+                  current century.Restaurants and food & beverage services were
+                  over priced and excessive service charges.We didn't like that
+                  parts of our hotel area were constantly over populated with
+                  conference attendees and our breakfast place was always too
+                  busy and full due to this problem.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="./img/reviews-avatar-5.webp"
+                    alt="Photo: Samantha Walsh"
+                    class="reviews-slider__avatar"
+                    width="90"
+                    height="90"
+                  />
+                  <h3 class="reviews-slider__username">Samantha Walsh</h3>
+                  <span class="reviews-slider__date">Stayed 01 Apr, 2016</span>
+                  <div class="stars reviews-slider__rating">
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                    <img
+                      src="./img/star.svg"
+                      alt="Yellow star"
+                      class="stars__image"
+                      width="8"
+                      height="8"
+                    />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  This is a great hotel with options of 5 pools, fitness studio,
+                  and use of tennis and squash courts for an additional fee.
+                  There are two breakfast restaurants to choose from, but can
+                  get really busy within the last hour. Options to choose to eat
+                  at one of five restaurants. 5min walk to the beach. 30min walk
+                  into the heart of Kata where there are more restaurants. I
+                  would definitely recommend this hotel for familys, solo
+                  travellers or friends.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
+        </div>
+        <!-- /.reviews-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
