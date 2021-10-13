@@ -1176,6 +1176,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .reviews {
