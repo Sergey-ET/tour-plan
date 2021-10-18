@@ -178,15 +178,56 @@
     &__input
       flex-basis: 47%
 @media (max-width: 767px)
+  body
+    padding-top: 79px
   .container
     max-width: 576px
     width: 87%
   .navbar
-    &__search, &-menu__list, &__user
-      display: none
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &__search
+      margin-left: 0
+      width: 245px
     &-top
       &__menu-button
         margin-top: 6px
+    &--fixed
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
+    &-bottom
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      top: 79px
+      padding: 31px 0 68px 0
+      &--visible
+        display: block
+    &-menu
+      &__list
+        padding: 0
+        flex-direction: column
+      &__item
+        &:not(:last-child)
+          margin-bottom: 17px
+        &:first-child
+          margin-bottom: 27px
+        &:nth-child(2)
+          margin-bottom: 36px
+        &--mobile
+          &--visible
+            display: block
   .menu
     &-button
       width: 16px
@@ -198,11 +239,17 @@
       justify-content: space-between
       border: none
       background-color: #ffffff
-      cursor: pointer
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        margin: 0
+        color: $light-color
+    &__avatar
+      margin-bottom: 10px
   .hotel
     padding: 5px 0 40px 0
     &__hotel-info
@@ -448,7 +495,11 @@
       &__link
         margin: 0
 @media (max-width: 576px)
+  body
+    padding-top: 74px
   .navbar
+    &-bottom
+      top: 74px
     &-top
       padding-top: 26px
       padding-bottom: 30px

@@ -424,6 +424,10 @@ template {
   color: #ffffff;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .navbar-menu__link {
   font-size: 14px;
   line-height: 18px;
@@ -1987,15 +1991,73 @@ template {
 }
 
 @media (max-width: 767px) {
+  body {
+    padding-top: 79px;
+  }
   .container {
     max-width: 576px;
     width: 87%;
   }
-  .navbar__search, .navbar-menu__list, .navbar__user {
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar__search {
+    margin-left: 0;
+    width: 245px;
   }
   .navbar-top__menu-button {
     margin-top: 6px;
+  }
+  .navbar--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 79px;
+    padding: 31px 0 68px 0;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu__list {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item:not(:last-child) {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item:first-child {
+    margin-bottom: 27px;
+  }
+  .navbar-menu__item:nth-child(2) {
+    margin-bottom: 36px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
   }
   .menu-button {
     width: 16px;
@@ -2016,12 +2078,18 @@ template {
             justify-content: space-between;
     border: none;
     background-color: #ffffff;
-    cursor: pointer;
   }
   .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    margin: 0;
+    color: #ffffff;
+  }
+  .user__avatar {
+    margin-bottom: 10px;
   }
   .hotel {
     padding: 5px 0 40px 0;
@@ -2407,6 +2475,12 @@ template {
 }
 
 @media (max-width: 576px) {
+  body {
+    padding-top: 74px;
+  }
+  .navbar-bottom {
+    top: 74px;
+  }
   .navbar-top {
     padding-top: 26px;
     padding-bottom: 30px;
