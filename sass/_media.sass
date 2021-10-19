@@ -64,6 +64,8 @@
     max-width: 700px
   .navbar-menu
     max-width: 673px
+  .logo
+    margin-bottom: 6px
   .logo__name
     font-size: 18px
     line-height: 18px
@@ -75,8 +77,8 @@
       margin-left: 47px
     &-menu
       &__list
-        padding-top: 21px
-        padding-bottom: 22px
+        padding-top: 19px
+        padding-bottom: 23px
       &__link
         font-size: 12px
         line-height: 15px
@@ -114,7 +116,7 @@
       font-size: 30px
       line-height: 38px
   .activities
-    padding-bottom: 70px
+    padding-bottom: 69px
     &-wrapper
       flex-wrap: wrap
       gap: 20px
@@ -165,6 +167,8 @@
       padding-left: 16px
     &__legal
       margin-left: 19px
+    &__details
+      margin-left: 8px
     &__contact
       &-details
         grid-column: span 3
@@ -172,9 +176,12 @@
         grid-column: span 3
         margin-top: 13px
         padding-right: 160px
+    &__title
+      &--details
+        margin-top: 17px
     &__link
       &--phone
-        margin-left: 8px
+        margin-left: 7px
     &__input
       flex-basis: 47%
 @media (max-width: 767px)
@@ -183,6 +190,8 @@
   .container
     max-width: 576px
     width: 87%
+  .logo
+    margin-bottom: 0
   .navbar
     &__search, &__user
       &--mobile
@@ -197,14 +206,16 @@
       margin-left: 0
       width: 245px
     &-top
+      padding: 22px 0 31px
       &__menu-button
         margin-top: 6px
-    &--fixed
-      position: fixed
-      top: 0
-      right: 0
-      left: 0
-      z-index: 99
+    &--mobile
+      &--fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
     &-bottom
       display: none
       position: fixed
@@ -250,6 +261,8 @@
         color: $light-color
     &__avatar
       margin-bottom: 10px
+  .breadcrumb-list
+    padding: 15px 0 19px 0
   .hotel
     padding: 5px 0 40px 0
     &__hotel-info
@@ -337,7 +350,7 @@
       font-size: 18px
       line-height: 23px
   .activities
-    padding: 40px 0 60px 0
+    padding: 38px 0 61px 0
     &__title
       margin-bottom: 36px
       font-size: 18px
@@ -422,12 +435,12 @@
       grid-row: 3
       grid-column: 1
       margin: 0
-      margin-bottom: 30px
+      margin-bottom: 32px
     &__additional
       grid-row: 4
       grid-column: 1
       padding: 0
-      margin-bottom: 27px
+      margin-bottom: 31px
     &__categories
       grid-row: 5
       grid-column: 1
@@ -452,7 +465,7 @@
       &--address
         align-items: start
       &--phone
-        margin-bottom: 19px
+        margin-bottom: 23px
     &__description
       margin-left: 13px
     &__link
@@ -499,10 +512,7 @@
     padding-top: 74px
   .navbar
     &-bottom
-      top: 74px
-    &-top
-      padding-top: 26px
-      padding-bottom: 30px
+      top: 71px
   .logo__name
     font-size: 13px
     line-height: 13px
