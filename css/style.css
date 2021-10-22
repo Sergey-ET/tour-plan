@@ -2054,6 +2054,7 @@ template {
     position: fixed;
     left: 0;
     right: 0;
+    bottom: 0;
     top: 71px;
     padding: 31px 0 68px 0;
   }
