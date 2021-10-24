@@ -1703,6 +1703,7 @@ template {
   border: none;
   color: #ffffff;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1807,7 +1808,8 @@ template {
   .subscribe__button,
   .reviews-slider__button,
   .card__button,
-  .box-room__button {
+  .box-room__button,
+  .footer__button {
     cursor: default;
   }
   .hotel {
