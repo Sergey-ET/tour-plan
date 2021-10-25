@@ -746,11 +746,16 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -1111,7 +1116,7 @@
               <br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
           <div class="card activities__card">
@@ -1127,7 +1132,7 @@
               <br />
               course
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
           <div class="card activities__card">
@@ -1143,7 +1148,7 @@
               <br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
           <div class="card activities__card">
@@ -1159,7 +1164,7 @@
               <br />
               quest
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card activities__card -->
         </div>
@@ -1390,7 +1395,7 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--form">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
+            <form action="send.php" method="POST" class="form footer__form">
               <input
                 type="text"
                 class="input footer__input"
@@ -1406,7 +1411,7 @@
               <textarea
                 cols="30"
                 rows="7"
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -1445,7 +1450,48 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/close.svg" alt="Icon: close button" />
+        </a>
+        <h3 class="modal__title modal__title--form">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            cols="30"
+            rows="7"
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
