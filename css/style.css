@@ -1798,6 +1798,7 @@ template {
   top: 50%;
   left: 50%;
   max-width: 478px;
+  max-height: 100%;
   padding: 33px 88px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1809,6 +1810,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -2174,6 +2176,8 @@ template {
     bottom: 0;
     top: 71px;
     padding: 31px 0 68px 0;
+    max-height: 100%;
+    overflow-y: auto;
   }
   .navbar-bottom--visible {
     display: block;
