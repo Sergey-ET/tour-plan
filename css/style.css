@@ -2619,6 +2619,8 @@ template {
   }
   .modal__dialog {
     padding: 33px 25px;
+    max-height: 517px;
+    height: 90%;
   }
   .modal__form {
     -webkit-box-orient: vertical;
