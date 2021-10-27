@@ -31,7 +31,8 @@
     &__legal
       padding-left: 0px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__message
       width: 100%
 @media (max-width: 992px)
@@ -186,7 +187,8 @@
       &--phone
         margin-left: 7px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
   .modal
     &__dialog
       width: 87%
@@ -496,10 +498,11 @@
       margin: 0
       margin-bottom: 15px
     &__input
-      margin: 0
-      margin-bottom: 15px
       padding: 18px 10px 17px 23px
-      width: 100%
+      &-group
+        margin: 0
+        margin-bottom: 15px
+        width: 100%
     &__message
       width: 100%
       height: 123px
@@ -519,7 +522,7 @@
   .modal
     &__dialog
       padding: 33px 25px
-      max-height: 517px
+      max-height: 591px
       height: 90%
     &__form
       flex-direction: column
