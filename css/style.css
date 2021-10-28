@@ -117,7 +117,7 @@ textarea {
   color: #EC1F46;
 }
 
-#email-error {
+.subscribe #email-error {
   position: absolute;
   top: 60px;
   overflow: visible;
