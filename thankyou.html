@@ -393,18 +393,32 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--form">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    data-mask="+7 (999) 999-99-99"
+                    minlength="18"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+              </div>
+              <!-- /.footer__input-wrapper -->
               <textarea
                 cols="30"
                 rows="7"
@@ -450,6 +464,8 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

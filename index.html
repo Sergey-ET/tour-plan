@@ -761,7 +761,7 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="form subscribe newsletter__subscribe"
         >
           <input
             type="email"
@@ -1408,28 +1408,32 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--form">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  minlength="2"
-                  required
-                />
+              <div class="footer__input-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    data-mask="+7 (999) 999-99-99"
+                    minlength="18"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
               </div>
-              <!-- /.footer__input-group -->
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  data-mask="+7 (000) 000-00-00"
-                  required
-                />
-              </div>
-              <!-- /.footer__input-group -->
+              <!-- /.footer__input-wrapper -->
               <textarea
                 cols="30"
                 rows="7"
@@ -1494,8 +1498,9 @@
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
-            required
             data-mask="+7 (000) 000-00-00"
+            minlength="18"
+            required
           />
           <input
             type="email"
