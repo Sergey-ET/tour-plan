@@ -42,8 +42,7 @@
   position: relative
   width: 350px
   height: 55px
-  border-radius: 4px
-  overflow: hidden
+  overflow: visible
   &__input
     position: absolute
     width: 100%
@@ -53,6 +52,8 @@
     font-size: 14px
     line-height: 18px
     border: none
+    overflow: visible
+    border-radius: 4px
   &__button
     position: absolute
     right: 0
@@ -67,3 +68,4 @@
     background-color: $primary-color
     color: $light-color
     cursor: pointer
+    border-radius: 0 4px 4px 0

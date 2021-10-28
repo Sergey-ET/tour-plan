@@ -117,6 +117,12 @@ textarea {
   color: #EC1F46;
 }
 
+#email-error {
+  position: absolute;
+  top: 60px;
+  overflow: visible;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1239,8 +1245,7 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .subscribe__input {
@@ -1252,6 +1257,8 @@ template {
   font-size: 14px;
   line-height: 18px;
   border: none;
+  overflow: visible;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -1268,6 +1275,7 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
