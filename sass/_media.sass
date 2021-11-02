@@ -1,3 +1,96 @@
+@media (min-width: 993px)
+  .navbar
+    &-menu
+      &__item
+        &:hover
+          text-decoration: underline
+          color: $primary-color
+  .logo__name
+    &:hover
+      color: $primary-color
+  .search
+    &__button
+      &:hover
+        background-color: #8a1313
+        border: 1px solid $primary-color
+  .user
+    &:hover
+      text-decoration: underline
+      color: $primary-color
+    &__name
+      &:hover
+        color: $primary-color
+  .button
+    &:hover
+      color: $primary-color
+      background-color: $light-color
+      font-weight: 700
+      text-transform: uppercase
+  .booking
+    &__button
+      &:hover
+        background-color: $light-color
+        color: $primary-color
+        font-weight: 700
+        text-transform: uppercase
+  .box
+    &-room
+      &__button
+        &:hover
+          color: $primary-color
+          background-color: $light_color
+          font-weight: 700
+          border: 2px solid $primary-color
+  .subscribe
+    &__button
+      &:hover
+        background-color: #8a1313
+        border: 1px solid $primary-color
+        font-weight: 700
+        text-transform: uppercase
+  .card
+    &__button
+      &:hover
+        color: $primary-color
+        background-color: $light_color
+        font-weight: 700
+        text-transform: uppercase
+  .footer
+    &-logo
+      &__name
+        &:hover
+          color: $primary-color
+    &__link
+      &:hover
+        text-decoration: underline
+        color: $primary-color
+      &--phone
+        &:hover
+          text-decoration: none
+          color: $footer-text-color
+          font-weight: normal
+        &--mobile
+          &:hover
+            font-weight: 700
+            color: $primary-color
+      &--email
+        &:hover
+          font-weight: 700
+          color: $primary-color
+    &__button
+      &:hover
+        color: $primary-color
+        background-color: $light-color
+        font-weight: 700
+        text-transform: uppercase
+    &-navbar
+      &__link
+        &:hover
+          text-decoration: underline
+          color: $primary-color
+  svg
+    &:hover
+      fill: $primary-color
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -50,10 +143,12 @@
   .box-room__button,
   .footer__button,
   .button,
-  .modal__close
+  .modal__close,
+  .footer__link,
+  .footer-logo__name,
+  .footer-navbar__link
     cursor: default
-  *:hover
-    pointer-events: none
+
   .hotel
     padding: 23px 0 60px 0
     &-grid
