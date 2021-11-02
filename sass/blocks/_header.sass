@@ -23,6 +23,9 @@
       list-style-type: none
       color: $light_color
     &__item
+      &:hover
+        text-decoration: underline
+        color: $primary-color
       &--mobile
         &--visible
           display: none
@@ -41,6 +44,8 @@
   line-height: 24px
   color: $text-color
   &--red
+    color: $primary-color
+  &:hover
     color: $primary-color
 .search
   display: flex
@@ -68,10 +73,16 @@
     border: none
     background-color: $primary-color
     cursor: pointer
+    &:hover
+      background-color: #8a1313
+      border: 1px solid $primary-color
 .user
   display: flex
   align-items: center
   text-decoration: none
+  &:hover
+    text-decoration: underline
+    color: $primary-color
   &__avatar
     width: 40px
     height: 40px
@@ -84,3 +95,5 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+    &:hover
+      color: $primary-color
