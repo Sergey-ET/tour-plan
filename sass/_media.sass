@@ -60,11 +60,9 @@
           font-weight: normal
         &--mobile
           &:hover
-            font-weight: 700
             color: $primary-color
       &--email
         &:hover
-          font-weight: 700
           color: $primary-color
     &__button
       &:hover
@@ -134,7 +132,6 @@
   .footer-logo__name,
   .footer-navbar__link
     cursor: default
-
   .hotel
     padding: 23px 0 60px 0
     &-grid
@@ -543,7 +540,7 @@
       &-details
         grid-row: 6
         grid-column: 1
-        margin-bottom: 60px
+        margin-bottom: 61px
       &-form
         grid-row: 7
         grid-column: 1
@@ -554,17 +551,18 @@
       grid-column: 1
       flex-direction: column
     &__details
-      margin-left: 2px
+      margin-left: 1px
     &__item
       &--address
         align-items: start
+        margin-bottom: 21px
       &--phone
-        margin-bottom: 18px
+        margin-bottom: 20px
     &__description
-      margin-left: 13px
+      margin-left: 15px
     &__link
       &--phone
-        margin-left: 0
+        margin-left: -2px
       &--email
         margin-left: 10px
     &__title
@@ -572,8 +570,11 @@
         margin-bottom: 22px
       &--details
         margin-top: 0
+        margin-bottom: 22px
       &--form
-        margin-bottom: 17px
+        margin-bottom: 15px
+    &__text
+      margin-left: -2px
     &__form
       flex-direction: column
       align-items: start
@@ -607,8 +608,6 @@
   .modal
     &__dialog
       padding: 33px 25px
-      max-height: 591px
-      height: 90%
     &__form
       flex-direction: column
       align-items: start
