@@ -1,11 +1,11 @@
-# Tour Plan
+# <img align="left" width="50" height="50" alt="logo" src="./img/btp-logo.png"> Best Tour Plan - Hotel Booking
 
-Учебный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
+Training project at course "Web Start" by [Glo Academy](https://glo.academy/), 15th group. Project was done in November 2022.
 
-# Проект выполняет
+* Project completed by Sergey Troshkin
+* Course author - [Artem Islamov](https://vk.com/aislam23)
+* Сurator - Vitaliy Morenko
 
-Трошкин Сергей. Пятнадцатый поток курса Веб Старт. Тариф "ЛОНГ" с куратором.
+## Project review
 
-# Куратор
-
-Моренко Виталий
+https://sergey-et.github.io/tour-plan/
